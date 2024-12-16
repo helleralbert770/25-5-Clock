@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels */
+#break-label,
+#session-label,
+#timer-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#break-length, #session-length {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Time Left Display */
+#time-left {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Increment/Decrement buttons */
+button[id*="decrement"],
+button[id*="increment"] {
+  background-color: #28a745;
+}
+
+button[id*="decrement"]:hover,
+button[id*="increment"]:hover {
+  background-color: #218838;
+}
+
+/* Start/Stop and Reset buttons */
+#start_stop {
+  background-color: #ffc107;
+  font-weight: bold;
+}
+
+#start_stop:hover {
+  background-color: #e0a800;
+}
+
+#reset {
+  background-color: #dc3545;
+  font-weight: bold;
+}
+
+#reset:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  #app {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #time-left {
+    font-size: 40px;
+  }
+
+  #break-length,
+  #session-length {
+    font-size: 30px;
+  }
+}
